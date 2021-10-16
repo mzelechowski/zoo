@@ -22,8 +22,9 @@ public class Main {
         for (Canine h:howlers){
             h.bark();
             if (h instanceof Dog){
-                Dog d = (Dog) h;
-                ((Dog) h).sitPretty();
+//                Dog d = (Dog) h;
+//                d.sitPretty();
+                ((Dog ) h).sitPretty();
             }
         }
     }
