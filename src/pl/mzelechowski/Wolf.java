@@ -11,7 +11,7 @@ public class Wolf extends Animal implements Canine{
 
     @Override
     public void introduce() {
-        System.out.println(this.getId() +" : I'm a wolf. My name is " + this.getName()+
+        System.out.println("I'm a wolf. My name is " + this.getName()+
                 ". I weigh "+ this.getWeight() + " kg and my fang length is " +this.fangLength+".");
     }
 

@@ -10,7 +10,7 @@ public class Dog extends Animal implements Canine{
 
     @Override
     public void introduce() {
-        System.out.println(this.getId() +" : I'm a dog. My name is " + this.getName()+
+        System.out.println("I'm a dog. My name is " + this.getName()+
                 ". I weigh "+ this.getWeight() + " kg.");
     }
 

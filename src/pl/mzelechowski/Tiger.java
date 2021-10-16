@@ -10,7 +10,7 @@ public class Tiger extends Animal {
 
     @Override
     public void introduce() {
-        System.out.println(this.getId() +" : I'm a Tiger. My name is " + this.getName()+
+        System.out.println("I'm a Tiger. My name is " + this.getName()+
                 ". I weigh "+ this.getWeight() + " kg and my claw length is " +this.clawLength+".");
     }
 }

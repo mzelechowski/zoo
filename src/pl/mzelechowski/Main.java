@@ -14,6 +14,7 @@ public class Main {
         Dog dog = new Dog("Scooby", 30);
         animals.addAll(Arrays.asList(bear, tiger, wolf, dog));
         for (Animal a:animals){
+            System.out.print(a.getId()+" : ");
             a.introduce();
         }
         List<Canine> howlers = new ArrayList<>();
