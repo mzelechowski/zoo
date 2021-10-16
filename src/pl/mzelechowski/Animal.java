@@ -4,15 +4,17 @@ public abstract class Animal {
     private int id;
     private String name;
     private float weight;
+    private static int COUNTER=0;
 
-    public Animal(int id, String name, float weight) {
-        this.id = id;
+    public Animal( String name, float weight) {
+        this.id = ++COUNTER;
         this.name = name;
         this.weight = weight;
     }
 
+
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(int id) {
@@ -34,5 +36,5 @@ public abstract class Animal {
     public void setWeight(float weight) {
         this.weight = weight;
     }
-    abstract void introduce();
+    public abstract void introduce();
 }

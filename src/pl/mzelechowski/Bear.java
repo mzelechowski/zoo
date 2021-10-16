@@ -3,15 +3,15 @@ package pl.mzelechowski;
 public class Bear extends Animal {
     private int furLength;
 
-    public Bear(int id, String name, float weight, int furLength) {
-        super(id, name, weight);
+    public Bear( String name, float weight, int furLength) {
+        super(name, weight);
         this.furLength = furLength;
     }
 
     @Override
-    void introduce() {
-        System.out.println("I'm bear. My name is " + this.getName()+
-                ". I weigh "+ this.getWeight() + " kg and my fur length is " +this.furLength);
+    public void introduce() {
+        System.out.println(this.getId() +" : I'm a bear. My name is " + this.getName()+
+                ". I weigh "+ this.getWeight() + " kg and my fur length is " +this.furLength+".");
 
     }
 }
